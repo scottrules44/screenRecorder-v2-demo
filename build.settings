@@ -1,0 +1,34 @@
+--
+-- For more information on build.settings see the Corona Build Guide at:
+-- http://docs.coronalabs.com/guide/distribution/buildSettings/index.html
+--
+
+settings =
+{
+
+	android =
+   {
+	 		minSdkVersion = "18",
+      usesPermissions =
+      {
+         "android.permission.INTERNET",
+      },
+   },
+	iphone =
+	{
+		xcassets = "Images.xcassets",
+		plist =
+		{
+			UILaunchStoryboardName = "LaunchScreen",
+		},
+	},
+	plugins =
+  {
+
+      ["plugin.screenRecorder.v2"] =
+      {
+          publisherId = "tech.scotth",
+					marketplaceId = "insert marketplace account ID",
+      },
+  },
+}
